@@ -1,0 +1,85 @@
+# The MIT License (MIT)
+
+Copyright (c) 2015-2017 Antoine Pous <gecko@dvp.io>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+NOM
+    Annabot - Robot de moderation interactif
+
+SYNOPSIS
+    php Annabot.php [-a] [-m] -p -r -u [--debug-logs] [--debug-events] [--debug-queries] [--dev] [--hide-completion] [--pretty-debug]
+    
+DESCRIPTION
+    Annabot est un robot embarquant un framework complet simplifiant les
+    interactions automatisées avec le serveur. Ce robot peut effectuer 
+    n'importe quelle tache. Pour faciliter le maintiens du code et des
+    fonctionalités un gestionnaire de modules est inclut. Pour plus d'infos
+    referrez-vous au dossier /Docs/.
+
+OPTIONS
+    -a  Liste des modules internes actifs sur l'instance    
+    
+    -m  Liste des modules tiers actifs sur l'instance
+    
+    -p  Mot de passe ou hash du mot de passe
+    
+    -r  ID du salon de connexion
+    
+    -u  Nom d'utilisateur
+    
+    --debug-logs      Active le debug et affiche tous les logs dans la console
+    
+    --debug-events    Active l'affichage des events emis
+    
+    --debug-queries   Active l'affichage des requêtes envoyées
+
+    --dev             Active le mode développement, utilise la version de développement du chat
+    
+    --hide-completion Désactive l'affichage des events completion
+
+    --pretty-debug    Active la mise en forme du JSON, prend plus de place mais améliore grandement la lisibilité
+    
+PREREQUIS
+    PHP 7.0+
+    PHP doit être compilé avec le flag --enable-pcntl
+    Redis server 3.x doit être installé
+    PhpRedis doit être compilé et installé https://github.com/phpredis/phpredis
+
+FICHIERS
+
+    ./Includes/*.inc.php
+      Fichiers de configuration
+      
+    ./Docs/*.txt
+      Fichiers de documentation
+    
+    ./Logs/*.log
+      Fichiers logs, verifiez l'accès en écriture pour ce dossier
+      
+CHANGELOG
+    Pour obtenir le changelog complet utilisez la commande `git log --oneline --decorate --color`
+
+LIENS UTILES
+    Bogues & suggestions https://github.com/dvp-io/annabot/issues
+    Dernières releases https://github.com/dvp-io/annabot/releases
+    Code source https://github.com/dvp-io/annabot
+
+AUTEUR
+    Antoine `Gecko` Pous <gecko@dvp.io>

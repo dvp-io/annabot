@@ -1,0 +1,6 @@
+[B][COLOR=red]Manuel Annabot v{{ version }}[/COLOR][/B]
+Voici la liste des commandes accessible depuis votre niveau d'accréditation. Pour obtenir plus d'information sur une commande il suffit de taper [b]/man <commande>[/b].
+
+[B][COLOR=blue]Liste des commandes[/COLOR][/B]
+
+{{ cmdlist }}

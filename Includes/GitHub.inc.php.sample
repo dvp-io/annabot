@@ -1,0 +1,74 @@
+<?php
+/**
+ * # The MIT License (MIT)
+ *
+ * Copyright (c) 2015-2017 Antoine Pous <gecko@dvp.io>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+
+
+/**
+ * Configuration liée à GitHub
+ * Fichier à copier vers /Includes/GitHub.inc.php
+ */
+ 
+/**
+ * API
+ */
+
+// URL de l'API GitHub à utiliser, repo officiel par défaut
+// string
+$cfg->set('GitHub_API', 'https://api.github.com/repos/dvp-io/annabot/releases/latest');
+
+// Nom du compte
+// string
+$cfg->set('GitHub_APILogin', '');
+
+// Token personnel, à générer ici  https://github.com/settings/tokens
+// string
+$cfg->set('GitHub_APIToken', '');
+
+/**
+ * Reporting
+ */
+
+// Le bot ouvre des tickets sur le repo github en cas d'erreur, ne fonctionne pas quand les flags --dev et --debug-* sont actifs
+// bool
+$cfg->set('GitHub_TCKExceptions', false);
+
+/**
+ * Check for update
+ */
+
+// Check si une nouvelle release est disponible, si oui un message est émis sur l'@ à 14h
+// bool
+$cfg->set('GitHub_CFUEnabled', false);
+
+// Intervale en jours entre les interrogation de l'API
+// int
+$cfg->set('GitHub_CFUInterval', 1);
+
+// Heure de l'envoi de l'alerte (hh:mm)
+// string
+$cfg->set('GitHub_CFUTime', '14:00');
+
+// Liste des ID utilisateurs devant recevoir les liens de téléchargement des mises à jour
+// array
+$cfg->set('GitHub_CFUReporting', [3, 276976]);

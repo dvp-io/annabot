@@ -1,0 +1,7 @@
+Bonjour et bienvenue sur le Chat de [URL=http://www.developpez.com/]Développez.com[/URL] !
+Sachez dans un premier temps que je suis un :bot: [B]robot de modération[/B], vous pouvez différencier les robots grâce à la pastille :bot: devant leur nom.
+[COLOR=#000000]Les robots de modération n'apportent aucune aide[/COLOR] et [COLOR=#000000]il est rigoureusement interdit de les contacter[/COLOR] sous peine de sanction.
+Il est également [COLOR=#000000]interdit de contacter les membres[/COLOR] pour leur poser une question technique [COLOR=#000000]sans y avoir été explicitement invité[/COLOR].[QUOTE]Règle #6 : Pas de message privé (ou message public personnel) aux membres que vous ne connaissez pas encore.
+Sur ce chat [COLOR=#000000]il existe une dizaine de règles que vous devez [U]impérativement[/U] connaître[/COLOR], cliquez sur ce bouton pour y accéder :aide:.
+En cas de réel besoin, qui n'est pas une question technique, vous pouvez contacter un :bot: [B][COLOR=#008000]Modérateur[/COLOR][/B] ou un :admin: [B][COLOR=#FF0000]Administrateur[/COLOR][/B].
+Merci et bon Chat sur [URL=http://www.developpez.com/]Développez.com[/URL] !
